@@ -1,0 +1,60 @@
+
+
+
+<div>
+
+        <div class="main-container" >
+            <div class="list"  style="text-align: left">
+                   
+<div *ngIf="client$ | async as client" class="client-detail"><table class="client-detail" *ngIf="showHide">
+      
+
+
+    <tr class="client-detail"><td class="client-detail">Nazwisko:<div>&nbsp;</div></td>
+        <td class="client-detail"><input name="title" type="text"  placeholder="{{(client$ | async)?.lname}}"  disabled><div>&nbsp;</div></td>
+    </tr>
+    <tr class="client-detail"><td class="client-detail">Imię:<div>&nbsp;</div></td>
+
+        <td class="client-detail"><input name="title" type="text"  placeholder="{{(client$ | async)?.fname}}"  disabled><div>&nbsp;</div></td>
+    </tr>
+    <tr *ngIf="client.sname" class="client-detail"><td>Drugie imię:<div>&nbsp;</div></td>
+
+        <td><input name="title" type="text"  placeholder="{{(client$ | async)?.sname}}"  disabled><div>&nbsp;</div></td>     
+    </tr>
+    <tr *ngIf="client.street"><td>Ulica:<div>&nbsp;</div></td>
+
+        <td><input name="title" type="text"  placeholder="{{(client$ | async)?.street}}"  disabled><div>&nbsp;</div></td>     
+    </tr>
+    <tr *ngIf="client.postalcode"><td>Kod pocztowy:<div>&nbsp;</div></td>
+
+        <td><input name="title" type="text"  placeholder="{{(client$ | async)?.postalcode}}"  disabled><div>&nbsp;</div></td>     
+    </tr>
+    <tr *ngIf="client.city"><td>Poczta:<div>&nbsp;</div></td>
+
+        <td><input name="title" type="text"  placeholder="{{(client$ | async)?.city}}"  disabled><div>&nbsp;</div></td>     
+    </tr>
+    <tr *ngIf="client.birthdate"><td>Data urodzenia:<div>&nbsp;</div></td>
+
+        <td><input name="title" type="text"  placeholder="{{(client$ | async)?.birthdate}}"  disabled><div>&nbsp;</div></td>
+    </tr>
+    <tr *ngIf="client.pesel"><td>Pesel:<div>&nbsp;</div></td>
+
+        <td><input name="title" type="text"  placeholder="{{(client$ | async)?.pesel}}"  disabled><div>&nbsp;</div></td>
+    </tr>
+    <tr *ngIf="client.phone"><td>Telefon:<div>&nbsp;</div></td>
+
+        <td><input name="title" type="text"  placeholder="{{(client$ | async)?.phone}}"  disabled><div>&nbsp;</div></td>
+    </tr>
+    <tr><td><button [routerLink]="client.$key"> Edytuj</button></td>
+        <td><button routerLink="/clients">Zamknij</button></td>        
+    </tr>
+   
+    </table>  
+ 
+</div>
+
+</div>
+
+</div>
+
+</div>

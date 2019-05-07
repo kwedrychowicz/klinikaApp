@@ -1,0 +1,22 @@
+.fill-remaining-space {
+    /*This fills the remaining space, by using flexbox.  
+   Every toolbar row uses a flexbox row layout. */
+   flex: 1 1 auto;
+ }
+ input[type=text] {
+  width: 100%;
+  padding: 3px 5px;
+  margin: 4px 0;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2;
+  text-decoration: bold;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+.input, .table {
+  background: #FAFAFA;
+}
+.mat-toolbar {
+  background: #FAFAFA;
+}

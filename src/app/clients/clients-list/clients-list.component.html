@@ -1,0 +1,30 @@
+        <mat-toolbar color="secondary"> 
+                <button routerLink="../newclient" *ngIf="authInfo?.isLoggedIn()">Dodaj nowego klienta</button>
+        </mat-toolbar>     
+
+        <table class="table app-clients-list card-strong" > 
+                <tbody>
+            <tr>
+
+            <td class="lp" style="font-size: 12pt; font-weight: bold; width: 50px; border-style: none; text-align:center">&nbsp;LP</td>
+            <td class="name" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">Imię</td>
+            <td class="name" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">Nazwisko</td>
+            <td class="name" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">Drugie imie</td>
+            <td class="date" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">Data urodzenia</td>
+            <td class="name" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">Pesel</td>
+            <td class="name" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">Telefon</td></tr>
+ 
+            <td class="lp" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <tr *ngFor="let client of clients; let i = index"  [routerLink]="client.$key">
+            <td class="lp" style="font-size: 12pt; width: 50px; border-style: none; text-align:center">&nbsp;{{i+1}}.</td>
+            <td class="name" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">{{client.fname}}</td>    
+            <td class="name" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">{{client.lname}}</td>
+            <td class="name" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">{{client.sname}}</td>
+            <td class="date" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">{{client.birthdate}}</td>
+            <td class="name" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">{{client.pesel}}</td>
+            <td class="name" style="font-size: 12pt; font-weight: bold; width: 150px; border-style: none; text-align:left">{{client.phone}}</td>
+            
+            </tr>
+        </tbody>
+    </table>
+   

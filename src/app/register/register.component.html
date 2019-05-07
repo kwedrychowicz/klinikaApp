@@ -1,0 +1,33 @@
+<main class="l-main l-sample-app">
+
+        <div>
+
+<div class="main-container">
+        <div class="list">
+
+<form autocomplete="off" novalidate class="login-form" [formGroup]="form">
+
+    <fieldset>
+        <legend>Rejestracja nowego użytkownika</legend>
+
+        <div class="form-field">
+            <label>E-mail:</label>
+            <input name="email" formControlName="email">
+        </div>
+        <div class="form-field">
+            <label>Hasło:</label>
+            <input name="password" formControlName="password" type="password">
+        </div>
+        <div class="form-field">
+            <label>Potwierdź hasło:</label>
+            <input name="confirm" formControlName="confirm" type="password">
+        </div>
+    </fieldset>
+
+    <button (click)="signUp()" [disabled]="!isPasswordMatch()">Stwórz użytkownika</button>
+
+</form>
+</div>
+</div>
+</div>
+</main>

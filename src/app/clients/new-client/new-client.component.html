@@ -1,0 +1,98 @@
+   <div class="main-container">
+       <div class="list"  style="text-align: left">
+
+<div >
+    <form [formGroup]="form" autocomplete="on" validate class="new-client">
+
+         <table>
+
+
+
+<tr><td><div>Nazwisko:</div><div> &nbsp;</div></td>
+   <td> <input name="title" type="text" formControlName="lname"  placeholder="Nazwisko">
+    <div  class="field-error-message" style="font-size: xx-small">pole obowiązkowe, min. 2 litery
+    </div>
+   
+</td>
+  
+</tr>
+<tr><td><div>Imię:</div><div> &nbsp;</div></td>
+
+   <td><input name="title" type="text"  formControlName="fname" placeholder="Imię"  >
+    <div  class="field-error-message"  style="font-size: xx-small">pole obowiązkowe, min. 2 litery
+    </div>
+</td>
+</tr>
+<tr><td><div>Drugie imię:</div><div> &nbsp;</div></td>
+
+   <td><input name="title" type="text"  formControlName="sname" placeholder="Drugie imię"  >
+    <div  class="field-error-message" style="font-size: xx-small">min. 2 litery
+    </div>
+</td>     
+</tr>
+<tr><td><div>Płeć:</div><div> &nbsp;</div></td>
+
+    <td><select name="title" formControlName="sex" placeholder="Płeć" autocomplete='organization'>
+            <option value="m">Mężczyzna
+            <option value="f">Kobieta
+           
+    </select>
+        
+       
+     <div  class="field-error-message" style="font-size: xx-small">proszę wybrać</div>
+ </td>     
+ </tr>
+
+<tr><td><div>Ulica:</div><div> &nbsp;</div></td>
+    <td> <input name="title" type="text" formControlName="street"  placeholder="Ulica"  >
+        <div  class="field-error-message" style="font-size: xx-small">pole obowiązkowe, min. 5 znaków
+        </div>
+  
+ </td>
+</tr>
+<tr><td><div>Kod pocztowy:</div><div> &nbsp;</div></td>
+    <td> <input name="title" type="text" formControlName="postalcode"  placeholder="Kod pocztowy"  >
+        <div  class="field-error-message" style="font-size: xx-small">Pole obowiązkowe, format XX-XXX
+        </div>
+  
+ </td>
+</tr>
+
+<tr><td><div>Poczta:</div><div> &nbsp;</div></td>
+    <td> <input name="title" type="text" formControlName="city"  placeholder="Poczta"  >
+        <div  class="field-error-message" style="font-size: xx-small">pole obowiązkowe, min. 5 znaków
+        </div>
+  
+ </td>
+</tr>
+
+<tr><td><div>Data urodzenia:</div><div> &nbsp;</div></td>
+
+    <td><input name="title" type="date" formControlName="birthdate" placeholder="Data urodzenia"></td>
+ </tr>
+ <tr><td><div>Pesel:</div><div> &nbsp;</div></td>
+
+    <td><input name="title" type="text" formControlName="pesel" placeholder="Pesel"></td>
+ </tr>
+ <tr><td><div>Telefon:</div><div> &nbsp;</div></td>
+
+    <td><input name="title" type="text" formControlName="phone" placeholder="Telefon"></td>
+ </tr>
+<tr>
+<td>
+    <button (click)="save()" routerLink="/clients" > Zapisz</button>
+</td>
+<td>
+    <button routerLink="/clients" >Anuluj</button>
+</td>
+</tr>
+
+</table>
+
+</form>
+
+</div>
+</div>
+
+</div>
+

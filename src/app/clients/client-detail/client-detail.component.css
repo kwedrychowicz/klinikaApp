@@ -1,0 +1,19 @@
+.client-detail {
+  width: 400px;
+}
+
+
+.field-error-message {
+  text-align: left
+}
+button:disabled{
+  color: #ffffff;
+}
+button {
+
+
+  padding: 4px 10px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
