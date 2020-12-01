@@ -1,4 +1,4 @@
-"# klinikaApp" 
+"# klinikaApp" <br> 
 Login form:
 ![Screenshot_login](https://raw.githubusercontent.com/webmagicalpl/KlinikaApp/master/login.png?raw=true "KlinikaApp Login")
 
